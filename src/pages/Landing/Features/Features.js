@@ -4,7 +4,7 @@ import "./Features.scss";
 const featuresList = [
   {
     title: "Super easy customizations",
-    text: "Create custom tools and integrations for your chat widget witha personalized behavior prompt to do specific tasks.",
+    text: "Create custom tools and integrations for your chat widget with  a personalized behavior prompt to do specific tasks.",
   },
   {
     title: "Setup multiple integrations",
@@ -46,6 +46,7 @@ export const Features = () => {
                 );
               })}
             </div>
+            <div className="info-mobile-desc">{featuresList[activeFeatureIndex].text}</div>
           </div>
           <div className="info-image">
             <img />

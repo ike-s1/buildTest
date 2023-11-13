@@ -5,6 +5,11 @@
   display: flex;
   flex-direction: row;
   column-gap: 10px;
+  position: relative;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 
   .dashboard-content {
     flex: 1;
@@ -19,26 +24,26 @@
       .rdrInputRanges {
         display: none;
       }
-
+      
       .rdrDateRangePickerWrapper {
         left: 0;
         top: 45px;
         border: 1px solid #E8E8E8;
       }
     }
-
-
-
   }
 
   .side-block {
     width: 311px;
 
+    @media (max-width: 992px) {
+        width: 200px;
+    }
+
     .custom-tabs {
       width: 100%;
       border-bottom: 1px solid #E8E8E8;
       margin-bottom: 14px;
-
     }
   }
 

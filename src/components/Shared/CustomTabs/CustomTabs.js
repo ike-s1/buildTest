@@ -1,13 +1,15 @@
 import React from "react";
 import "./CustomTabs.scss";
 import { Link, useLocation } from "react-router-dom";
+import menuIcon from "../../../resources/icons/burger-menu.png";
 
 const CustomTabs = ({ items}) => {
   const location = useLocation();
 
   return (
-    <div className="custom-tabs">
-      <ul>
+    <nav className="custom-tabs">
+      {true && <img src={menuIcon} alt='menu-icon' className="mobile-menu-icon"/>}
+      <ul className="mobile">
         {items &&
           items.map((i, index) => (
             <li
@@ -24,7 +26,7 @@ const CustomTabs = ({ items}) => {
             </li>
           ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 

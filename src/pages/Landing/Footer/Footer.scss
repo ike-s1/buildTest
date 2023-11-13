@@ -6,8 +6,19 @@
     margin: 0 auto;
     background: #ECEFF3;
 
+    @media (max-width: 992px) {}
+
     .footer-content {
         padding: 32px 64px;
+
+        @media (max-width: 992px) {
+            padding: 32px 36px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 16px 16px 24px 16px;
+        }
+
 
         .footer-top {
             display: flex;
@@ -16,13 +27,39 @@
             height: 76px;
             margin-bottom: 56px;
 
+            @media (max-width:768px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: auto;
+                margin-bottom: 24px;
+                row-gap: 25px;
+            }
+
+
             .footer-logo {
                 margin-left: 24px;
+
+                @media (max-width: 992px) {
+                    margin-left: 0;
+                }
             }
 
             .footer-links {
                 display: flex;
                 column-gap: 32px;
+
+                @media (max-width: 992px) {
+                    column-gap: 24px;
+                }
+
+                @media (max-width:768px) {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    row-gap: 17px;
+                }
+
 
 
                 a {
@@ -38,6 +75,10 @@
                         opacity: 0;
                         transform-origin: bottom right;
                         transition: all 0.5s linear;
+
+                        @media (max-width: 768px) {
+                            bottom: -5px;
+                        }
                     }
 
                     &:hover,
@@ -75,8 +116,22 @@
             height: 74px;
             margin-top: 32px;
 
+            @media (max-width:768px) {
+                margin-top: 0px;
+                padding-top: 24px;
+                height: auto;
+                justify-content: flex-start;
+            }
+
             .footer-about {
                 display: flex;
+
+                @media (max-width:768px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    row-gap: 16px;
+                }
 
                 p {
                     margin-right: 24px;
@@ -85,6 +140,14 @@
                 ul {
                     display: flex;
                     column-gap: 24px;
+
+                    @media (max-width:768px) {
+                        column-gap: 8px;
+                        
+                        a {
+                            font-size: 14px;
+                        }
+                    }
 
                     li {
                         cursor: pointer;

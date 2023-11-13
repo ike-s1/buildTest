@@ -8,7 +8,7 @@ export const store = configureStore({
   reducer: {
     chatbot: chatbotReducer,
     modal: modalReducer,
-    user: userReducer,
-    auth: authReducer,
+    // user: userReducer,
+    // auth: authReducer,
   },
 });

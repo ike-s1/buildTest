@@ -4,9 +4,15 @@
     margin-bottom: 58px;
     width: 100%;
     position: relative;
+    padding: 0 20px;
 
     .integrate-title {
         margin-bottom: 53px;
+
+        @media (max-width: 480px) {
+            font-size: 20px;
+            margin: 0 0 16px 0px;
+        }
     }
 
     .animated-circles {
@@ -18,7 +24,19 @@
         animation-duration: 4s; 
         animation-timing-function: ease; 
         animation-iteration-count: infinite; 
+        width: 500px;
+        height: 500px;
 
+        @media (max-width: 992px) {
+            width: 350px;
+            height: 350px;
+            right: 10%;;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+        
         .animated-circle {
             border: 2px solid rgba(25, 66, 212, 0.2);
             border-radius: 50%;
@@ -26,36 +44,31 @@
 
             &.one {
                 position: absolute;
-                width: 363px;
-                height: 363px;
+                width: 72.6%;
+                height: 72.6%;
                 bottom: -20px;
-
             }
-
+            
             &.two {
                 position: absolute;
-                width: 420px;
-                height: 422px;
+                width: 84%;
+                height: 84.4%;
                 bottom: -40px;
-
             }
-
+            
             &.three {
                 position: absolute;
-                width: 482px;
-                height: 484px;
+                width: 96.4%; 
+                height: 96.8%;
                 bottom: -60px;
-
             }
-
+            
             &.four {
                 position: absolute;
-                width: 538px;
-                height: 543px;
+                width: 107.6%; 
+                height: 108.6%; 
                 bottom: -80px;
-
             }
-
         }
     }
 
@@ -63,17 +76,34 @@
         margin: 0 auto;
         width: 731px;
 
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+
         .integrate-items {
+            width: 100%;
             height: 416px;
             padding: 0 30px;
             display: flex;
             flex-wrap: wrap;
             gap: 16px;
 
+            @media (max-width: 768px) {
+                height: auto;
+                justify-content: center;
+            }
+
+            @media (max-width: 480px) {
+                padding: 0;
+             }
 
             .integrate-item {
-                width: calc(50% - 16px);
-                height: calc(50% - 8px);
+                width: 320px;
+                height: 200px;
                 border-radius: 20px;
                 border: 1px solid #E8E8E8;
                 box-shadow: 0px 4px 10px 0px rgba(24, 68, 223, 0.15);
@@ -81,6 +111,22 @@
                 transition: all 0.4s linear;
                 background: white;
                 cursor: pointer;
+
+                @media (max-width: 768px) {
+                   width: 60%;
+                   min-width: 320px;
+
+                   .item-icon {
+                    align-self: center;
+                   }
+                }
+
+            
+                @media (max-width: 480px) {
+                    width: 100%;
+                   
+                }
+
 
                 &:hover {
                     transform: translateY(-5px);
@@ -93,31 +139,39 @@
 
                 &:nth-child(1) {
                     .item-icon {
-                        margin: 16px 0px 60px 30px;
+                        margin: 16px 0px 60px 0px;
+                        max-width: 211px;
                     }
                 }
 
                 &:nth-child(2) {
                     .item-icon {
-                        margin: -16px 0px 0px 40px;
+                        margin: -16px 0px 0px 0px;
+                        max-width: 194px;
                     }
                 }
 
                 &:nth-child(3) {
                     .item-icon {
-                        margin: 11px 0px 28px 20px;
+                        margin: 11px 0px 28px 0px;
+                        max-width: 231px;
                     }
                 }
 
                 &:nth-child(4) {
                     .item-icon {
-                        margin: 13px 0px 30px 47px;
+                        margin: 13px 0px 30px 0px;
+                        max-width: 177px;
                     }
                 }
 
                 .item-content {
                     padding: 16px 16px 16px 24px;
                     text-align: left;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
 
 
                     .arraw-right {
@@ -135,10 +189,8 @@
                     }
 
                 }
-
             }
         }
-
     }
 
     @keyframes circleAnimation {

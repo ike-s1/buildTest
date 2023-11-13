@@ -1,5 +1,5 @@
 import React from "react";
-import "./ChatbotControls.scss";
+import './ChatbotControls.scss';
 
 import { Route, Routes } from "react-router-dom";
 import { Sources } from "../Sources/Sources";
@@ -18,6 +18,7 @@ import { ChatbotItem } from "../ChatbotItem/ChatbotItem";
 import CustomMenu from "../../components/Shared/CustomMenu/CustomMenu";
 import { useDispatch } from "react-redux";
 import { togleEmbedModal } from "../../redux/slices/modal/slice";
+
 
 const chatbotMenu = [
   { url: "/chatbot/chatbot", label: "Chatbot" },

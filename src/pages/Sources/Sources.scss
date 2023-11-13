@@ -3,6 +3,17 @@
     display: flex;
     flex-direction: row;
     column-gap: 10px;
+    position: relative;
+
+    @media (max-width: 992px) {
+        .custom-tabs {
+            width: 160px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        flex-direction: column;
+    }
 
     .sources-content {
         flex: 1;

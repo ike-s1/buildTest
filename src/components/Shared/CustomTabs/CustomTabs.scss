@@ -1,6 +1,15 @@
 .custom-tabs {
     width: 226px;
 
+    @media (max-width: 640px) {
+      ul {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+      }
+    }
+
     ul {
       text-align: left;
 

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>QuantumChat.ai - Elevate Your Conversations</title>
   <link rel="icon" href="/quantumchatlogo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
@@ -16,7 +17,7 @@
 <script>
   window.embeddedChatbotConfig = {
     chatbotId: "1",
-    domain: "https://quantumchat.ai"
+    domain: "http://localhost:3000"
   }
 </script>
  <script>
@@ -24,7 +25,7 @@
     const script = document.createElement("script");
     script.src = "/embedQuantum.min.js";
     script.chatbotId = "1";
-    script.domain = "https://quantumchat.ai";
+    script.domain = "http://localhost:3000";
     script.defer = true;
     document.body.appendChild(script);
   }

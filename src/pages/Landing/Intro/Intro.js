@@ -15,7 +15,7 @@ export const Intro = () => {
             <div className="ellipse"></div>
             <img className="wave" src={wave} />
             <p className="build-header">
-              <span>Presonalize</span>ChatGPT for<span>Your Data</span>
+              <span>Presonalize</span><br/>ChatGPT <br/>for<span>Your Data</span>
             </p>
             <p className="build-text">
               Simply link up where your information is stored, and you'll get a

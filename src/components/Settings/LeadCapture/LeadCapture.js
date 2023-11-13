@@ -31,39 +31,49 @@ export const LeadCapture = () => {
     <div className="lead-capture-wrapper">
       <div className="lead-capture-content">
         <p>Title</p>
-        <div className="title-block">
+        <div className="lead-setting-block">
           <CustomInput value={title} onChange={setTitle} />
+          <div className="settings-block-btns">
           <CustomButton>Save</CustomButton>
           <CustomButton dark={true}>Reset</CustomButton>
+          </div>
         </div>
         <div className="checkbox-block">
         <p>Name</p>
         <CustomCheckbox value={nameChecked} onChange={setNameChecked} />
         { nameChecked && <div className="lead-setting-block">
           <CustomInput value={name} onChange={setName} />
+          <div className="settings-block-btns">
           <CustomButton>Save</CustomButton>
           <CustomButton dark={true}>Reset</CustomButton>
+          </div>
         </div> }
         <p>Email</p>
         <CustomCheckbox value={emailChecked} onChange={setEmailChecked} />
         { emailChecked && <div className="lead-setting-block">
           <CustomInput value={email} onChange={setEmail} />
+          <div className="settings-block-btns">
           <CustomButton>Save</CustomButton>
           <CustomButton dark={true}>Reset</CustomButton>
+          </div>
         </div> }
         <p>Discord account</p>
         <CustomCheckbox value={discordChecked} onChange={setDiscordChecked} />
         { discordChecked && <div className="lead-setting-block">
           <CustomInput value={discordAccount} onChange={setDiscordAccount} />
+          <div className="settings-block-btns">
           <CustomButton>Save</CustomButton>
           <CustomButton dark={true}>Reset</CustomButton>
+          </div>
         </div> }
         <p>Phone number</p>
         <CustomCheckbox value={phoneNumberChecked} onChange={setPhoneNumberChecked} />
         { phoneNumberChecked && <div className="lead-setting-block">
           <CustomInput value={phoneNumber} onChange={setPhoneNumber} />
+          <div className="settings-block-btns">
           <CustomButton>Save</CustomButton>
           <CustomButton dark={true}>Reset</CustomButton>
+          </div>
         </div> }
         </div>
       </div>

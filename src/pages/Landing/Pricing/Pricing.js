@@ -1,33 +1,31 @@
 import React, { useState } from "react";
 import "./Pricing.scss";
 import CustomButton from "../../../components/Shared/CustomBtn/CustomBtn";
-import check from "../../../resources/icons/check.svg";
-import checkBlack from "../../../resources/icons/check-black.svg";
+import check from "../../../resources/icons/check.png";
+import checkBlack from "../../../resources/icons/check-black.png";
 
 const MONTHLY = "MONTHLY";
 const YEARLY = "YEARLY";
 
 const pricingPlans = [MONTHLY, YEARLY];
 const freePlanFeatures = [
-  "Feature text goes here",
-  "Feature text goes here",
-  "Feature text goes here",
-  "Feature text goes here",
-  "Feature text goes here",
+  "Chatbots - 1",
+  "Characters limit - 200k",
+  "Messages/credits - 50",
+  "Conversation history - yes",
+  "Lead Capture - yes",
+  "Unlimited embeddins - yes",
+  "Unlimited file uploads - 25",
+  "Unlimited webpages - 25",
+  "Q/As support - yes",
+  "File size limit - 5 MB",
+  "API access - no",
 ]
 const smallPlanFeatures = [
-  "Feature text goes here",
-  "Feature text goes here",
-  "Feature text goes here",
-  "Feature text goes here",
-  "Feature text goes here",
+  "Coming soon",
 ]
 const enterprisePlanFeatures = [
-  "Feature text goes here",
-  "Feature text goes here",
-  "Feature text goes here",
-  "Feature text goes here",
-  "Feature text goes here",
+  "Coming soon",
 ]
 
 

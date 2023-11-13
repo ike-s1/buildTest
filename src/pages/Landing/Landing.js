@@ -15,16 +15,16 @@ export const Landing = () => {
   return (
     <div className="landing-wrapper">
       <div className="landing-content">
-            <Intro/>
-            <Demo/>
-            <Features/>
-            <LiveChat/>
-            <Pricing/>
-            <ContactUs/>
-            <FAQs/>
-            <QuestionContact/>
-            <Integrates/>
-            <Footer/>
+        <Intro />
+        <Demo />
+        <Features />
+        <LiveChat />
+        <Pricing />
+        <ContactUs />
+        <FAQs />
+        <QuestionContact />
+        <Integrates />
+        <Footer />
       </div>
     </div>
   );
