@@ -1,4 +1,5 @@
 import React from "react";
+import './Modals.scss';
 import { useSelector, useDispatch } from "react-redux";
 import { selectModal } from "../../redux/slices/modal/selectors";
 import {

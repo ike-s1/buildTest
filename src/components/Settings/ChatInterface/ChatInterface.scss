@@ -6,6 +6,10 @@
     .suggested-output {
         margin-bottom: 26px;
         color: #878787;
+
+        @media (max-width: 640px) {
+            margin-bottom: 16px;
+        }
     }
 
     .intro-btns-block, .suggested-bts-block {
@@ -16,7 +20,7 @@
     }
 
     textarea {
-        resize: none;
+        resize: vertical;
         width: 100%;
         height: 72px;
         border-radius: 4px;

@@ -39,11 +39,23 @@
     @media (max-width: 992px) {
         width: 200px;
     }
+    
+    @media (max-width: 640px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
 
     .custom-tabs {
       width: 100%;
       border-bottom: 1px solid #E8E8E8;
       margin-bottom: 14px;
+
+      @media (max-width: 640px) {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
     }
   }
 

@@ -17,11 +17,11 @@ export const Security = () => {
   const [messageEvery, setMessageEvery] = useState(0);
 
   const handleSetLimitToOnly = (number) => {
-    setLimitToOnly(Math.floor(number));
+    setLimitToOnly(parseInt(number, 10));
   };
-
+  
   const handleSetMessageEvery = (number) => {
-    setMessageEvery(Math.floor(number));
+    setMessageEvery(parseInt(number, 10));
   };
 
   return (
@@ -57,7 +57,6 @@ export const Security = () => {
               style={{ maxWidth: "100px" }}
               type="number"
               step={1}
-              min={0}
               value={limitToOnly}
               onChange={handleSetLimitToOnly}
             />
@@ -66,7 +65,6 @@ export const Security = () => {
               style={{ maxWidth: "110px" }}
               type="number"
               step={1}
-              min={0}
               value={messageEvery}
               onChange={handleSetMessageEvery}
             />

@@ -4,7 +4,7 @@ import logo from "../../resources/logo.png";
 import "./Header.scss";
 import arrowRight from "../../resources/arrow.png";
 import { useDispatch } from "react-redux";
-import { togleSignInModal } from "../../redux/slices/modal/slice";
+import { togleSignInModal, togleSignUpModal } from "../../redux/slices/modal/slice";
 import { Link } from "react-router-dom";
 import menuIcon from "../../resources/icons/burger-menu.png";
 import closeIcon from "../../resources/icons/🦆 icon _cancel_.png";
@@ -34,7 +34,7 @@ export const Header = () => {
     if (openMenu) {
       openMenu(false);
     }
-    dispatch(togleSignInModal(true));
+    dispatch(togleSignUpModal(true));
   };
 
   useEffect(()=> {
@@ -53,7 +53,6 @@ export const Header = () => {
         </Link>
       </div>
         <div className="header-menu">
-          {menuOpened && (
             <div className="mobile-menu-top">
               <div>
                 <Link to="/"  onClick={handleLinkCLick}>
@@ -66,7 +65,6 @@ export const Header = () => {
                 onClick={() => toggleMenu(false)}
               />
             </div>
-          )}
           <ul>
             {menuItems.map((item, index) => (
               <li key={index}  onClick={handleLinkCLick}>
