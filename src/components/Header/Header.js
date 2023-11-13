@@ -34,7 +34,7 @@ export const Header = () => {
     if (openMenu) {
       openMenu(false);
     }
-    dispatch(togleSignUpModal(true));
+    dispatch(togleSignInModal(true));
   };
 
   useEffect(()=> {

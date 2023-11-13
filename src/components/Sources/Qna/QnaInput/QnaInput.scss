@@ -10,6 +10,14 @@
         justify-content: space-between;
         column-gap: 16px;
         margin-bottom: 12px;
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+
+            .custom-button {
+                align-self: flex-end;
+            }
+        }
     }
 
     .qna-input-block {

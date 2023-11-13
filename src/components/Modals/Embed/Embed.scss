@@ -36,6 +36,10 @@
             background-color: white;
             margin-bottom: 10px;
 
+            @media (max-width:480px) {
+                font-size: 14px;
+            }
+
             pre {
                 text-align: left;
                 text-wrap: wrap;
@@ -76,5 +80,16 @@
 
     .rodal-dialog {
         padding: 20px;
+        height: fit-content!important;
+
+        @media (max-width:992px) {
+            max-height: unset!important;
+        }
+        
+
+        @media screen and (max-height: 750px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
     }
 }

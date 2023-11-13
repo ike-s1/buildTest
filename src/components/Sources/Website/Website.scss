@@ -25,6 +25,11 @@
         column-gap: 16px;
         margin-bottom: 12px;
 
+        @media (max-width: 480px) {
+            flex-direction: column;
+            row-gap: 16px;
+        }
+
     }
 
     .or {
@@ -53,6 +58,10 @@
         .custom-button {
             position: absolute;
             right: 0;
+            
+            @media (max-width: 480px) {
+                width: 100%;
+            }
         }
     
     

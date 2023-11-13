@@ -33,7 +33,7 @@ export const EmbedModal = ({ visible, handleClose }) => {
       <div className="embed-modal">
         <div className="embed-content">
           <h3 className="domain-name">
-            https://setup-git-git-main-ike-s1.vercel.app
+          https://quantumchat.ai
           </h3>
           <div className="embed-iframe">
             <p className="embed-desc">
@@ -43,7 +43,7 @@ export const EmbedModal = ({ visible, handleClose }) => {
             <div className="embed-block">
               <pre>
                 <code ref={iframeElement}>{`<iframe
-src="https://setup-git-git-main-ike-s1.vercel.app/chatbot-iframe/${id}
+src="https://quantumchat.ai/chatbot-iframe/${id}
 width="100%"
 style="height: 100%; min-height: 700px"
 frameborder="0"
@@ -65,13 +65,13 @@ frameborder="0"
             {`<script>
 window.embeddedChatbotConfig = {
 chatbotId:"${id}",
-domain: " https://setup-git-git-main-ike-s1.vercel.app"
+domain: "https://quantumchat.ai"
 }
 </script>
 <script
-src="https://setup-git-git-main-ike-s1.vercel.app/embed.min.js"
+src="https://quantumchat.ai/embedQuantum.min.js"
 chatbotId="${id}"
-domain="https://setup-git-git-main-ike-s1.vercel.app"
+domain="https://quantumchat.ai"
 defer>
 </script>`}
               </code></pre>
