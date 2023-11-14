@@ -57,6 +57,7 @@ export const Security = () => {
               style={{ maxWidth: "100px" }}
               type="number"
               step={1}
+              min={0}
               value={limitToOnly}
               onChange={handleSetLimitToOnly}
             />
@@ -65,6 +66,7 @@ export const Security = () => {
               style={{ maxWidth: "110px" }}
               type="number"
               step={1}
+              min={0}
               value={messageEvery}
               onChange={handleSetMessageEvery}
             />

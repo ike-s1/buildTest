@@ -18,10 +18,12 @@
 
     .embed-iframe,
     .embed-script {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        word-break: break-all;
 
         &:not(:last-child) {
             margin-bottom: 10px;
@@ -84,12 +86,12 @@
 
         @media (max-width:992px) {
             max-height: unset!important;
+            padding: 10px;
         }
         
 
         @media screen and (max-height: 750px) {
             margin-top: 20px;
-            margin-bottom: 20px;
          }
     }
 }

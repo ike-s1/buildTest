@@ -1,10 +1,14 @@
-.signIn-modal {
+@import '../../../styles/variables';
+
+.signUp-modal {
 
     h2 {
         font-size: 32px;
-        margin: 0 0 48px 0;
+        margin: 16px 0 48px 0;
+        color: $main-color;
 
-        @media (max-width:992px), (max-height: 750px) {
+        @media (max-width:992px),
+        (max-height: 750px) {
             margin: 0 0 16px 0;
         }
 
@@ -17,7 +21,8 @@
         font-size: 18px;
         margin: 0 0 48px 0;
 
-        @media (max-width:992px),  (max-height: 750px) {
+        @media (max-width:992px),
+        (max-height: 750px) {
             margin: 0 0 16px 0;
         }
     }
@@ -34,7 +39,7 @@
     }
 
 
-    .signIn-modal-form {
+    .signUp-modal-form {
         text-align: left;
 
         .custom-input {
@@ -43,7 +48,8 @@
             border-radius: 0px;
             border: 1px solid #878787;
 
-            @media (max-width:992px),  (max-height: 750px) {
+            @media (max-width:992px),
+            (max-height: 750px) {
                 margin-bottom: 16px;
                 height: 40px;
             }
@@ -60,27 +66,14 @@
         border-radius: 16px;
         height: 59px;
 
-        @media (max-width:992px),  (max-height: 750px) {
+        @media (max-width:992px),
+        (max-height: 750px) {
             margin: 8px 0px 16px;
             height: 50px;
         }
     }
 
-    .google-signIn {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 32px;
-        margin-bottom: 24px;
-        border-bottom: 1px solid #B4B4B4;
-
-        @media (max-width:992px),  (max-height: 750px) {
-            padding-bottom: 16px;
-            margin-bottom: 8px;
-        }
-    }
-
-    .singIn-links {
+    .singUp-links {
 
         p {
             font-weight: 700;
@@ -89,6 +82,17 @@
             margin-bottom: 4px;
             cursor: pointer;
         }
+
+        div {
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            background: #6385FF;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0 auto;
+            width: fit-content;
+            cursor: pointer;
+        }
     }
 }
-

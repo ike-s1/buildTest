@@ -1,77 +1,157 @@
 @import "../../../styles/variables";
 
 
-.contact-us-modal {
-    h2 {
-        font-size: 32px;
-        margin: 0 0 16px 0;
+
+.contact-us-wrapper {
+
+    .contact-us-modal {
+        h2 {
+            font-size: 32px;
+            margin: 0 0 16px 0;
+            color: $main-color;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin: 0 0 48px 0;
+
+            @media (max-width:992px), (max-height: 900px) {
+                margin: 0 0 16px 0;
+                font-size: 16px;
+            }
+        }
+
+        .close-icon {
+            position: absolute;
+            right: 24px;
+            top: 24px;
+            cursor: pointer;
+        }
+
+        .contact-us-form {
+            text-align: left;
+
+            .custom-input {
+                height: 53px;
+                margin-bottom: 24px;
+                border-radius: 0px;
+                border: 1px solid #878787;
+                
+                @media (max-width:992px), (max-height: 900px) {
+                    height: 40px;
+                    margin-bottom: 16px;
+                }
+            }
+
+
+            textarea {
+                resize: none;
+                width: 100%;
+                padding: 12px;
+                height: 180px;
+                border: 1px solid #878787;
+                background: #FFF;
+                margin-bottom: 24px;
+
+                @media (max-width:992px), (max-height: 900px) {
+                  height: 80px;
+                  margin-bottom: 16px;
+                }
+            }
+
+            p {
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+        }
+
+        .contact-us-checkbox {
+            margin-bottom: 40px;
+
+            @media (max-width:992px), (max-height: 900px) {
+               margin-bottom: 25px;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+
+
+
+            .custom-checkbox-input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                border: 2px solid $blue;
+                width: 18px;
+                height: 18px;
+                margin-right: 12px;
+              }
+              
+              .custom-checkbox-checkmark {
+                position: relative;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #1844DF;
+                background: white;
+                margin-right: 8px; 
+              }
+              
+              .custom-checkbox-checkmark:before {
+                content: "";
+                position: absolute;
+                display: none;
+                width: 15px;
+                height: 15px;
+                background: url('../../../resources/icons/check-black.png') center/contain no-repeat;
+              }
+              
+              .custom-checkbox-input:checked ~ .custom-checkbox-checkmark:before {
+                display: block;
+              }
+              
+
+            span {
+                display: inline-block;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+
+        .custom-button {
+            border-radius: 16px;
+            height: 59px;
+
+            @media (max-width:992px), (max-height: 900px) {
+               height: 50px;
+            }
+        }
+
     }
 
-    h4 {
-        font-size: 18px;
-        margin: 0 0 48px 0;
-    }
+    .rodal-dialog {
+        width: 768px !important;
+        padding: 64px;
 
-    .close-icon {
-        position: absolute;
-        right: 24px;
-        top: 24px;
-        cursor: pointer;
-    }
-
-    .contact-us-form {
-        text-align: left;
-
-        .custom-input {
-            height: 53px;
-            margin-bottom: 24px;
-            border-radius: 0px;
-            border: 1px solid #878787;
+        @media (max-width:992px) {
+            padding: 30px;
+            width: 50% !important;
         }
 
-        textarea {
-            resize: none;
-            width: 100%;
-            padding: 12px;
-            height: 180px;
-            border: 1px solid #878787;
-            background: #FFF;
-            margin-bottom: 24px;
+        @media (max-width:768px) {
+            width: 80% !important;
         }
 
-        p {
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-    }
-
-    .contact-us-checkbox {
-        margin-bottom: 40px;
-
-        label {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        @media (max-width:480px) {
+            padding: 16px;
+            width: 95% !important;
         }
 
-        
-        input {
-            border: 2px solid $blue;
-            width: 18px;
-            height: 18px;
-            margin-right: 12px;
+        @media screen and (max-height: 600px) and (max-width: 992px) {
+            height: 600px !important;
         }
-
-        span {
-            display: inline-block;
-            font-weight: 500;
-            text-decoration: underline;
-        }
-    }
-
-    .custom-button {
-        border-radius: 16px;
-        height: 59px;
     }
 }
-

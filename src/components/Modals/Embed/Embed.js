@@ -6,8 +6,7 @@ import copy from "copy-to-clipboard";
 import { toast } from 'react-toastify';
 
 
-const id = '1111'
-
+const id = 'id'
 
 export const EmbedModal = ({ visible, handleClose }) => {
 

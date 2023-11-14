@@ -10,6 +10,7 @@ export const ContactUsModal = ({ visible, handleClose }) => {
   const [checked, setChecked] = useState(false);
 
   return (
+    <div className="contact-us-wrapper">
     <Rodal
       visible={visible}
       onClose={handleClose}
@@ -35,10 +36,12 @@ export const ContactUsModal = ({ visible, handleClose }) => {
         <div className="contact-us-checkbox">
           <label>
             <input
-              type="checkbox"
-              checked={checked}
-              onChange={() => setChecked((prev) => !prev)}
-            />
+                type="checkbox"
+                checked={checked}
+                onChange={() => setChecked((prev) => !prev)}
+                className="custom-checkbox-input"
+              />
+              <span className="custom-checkbox-checkmark"></span>
             <span>I accept the Terms</span>
           </label>
         </div>
@@ -46,5 +49,6 @@ export const ContactUsModal = ({ visible, handleClose }) => {
         <img src={closeIcon} onClick={handleClose} className="close-icon" alt="closeIcon" />
       </div>
     </Rodal>
+    </div>
   );
 };

@@ -37,15 +37,15 @@
       gap: 32px;
       margin: 16px;
     }
-  
+
     li {
       cursor: pointer;
       position: relative;
       color: $main-color;
-  
-  
+
+
       a {
-  
+
         &::after {
           content: '';
           position: absolute;
@@ -58,78 +58,89 @@
           transform-origin: bottom right;
           transition: all 0.5s linear;
         }
-  
+
         &:hover,
         &.active {
           -webkit-text-stroke: 0.7px #333;
-  
+
           &::after {
             opacity: 1;
           }
         }
       }
-  
-  
+
+
     }
-  
-  }
 
-  
-.menu-icon {
-  display: none;
-  margin-right: 8px;
-  cursor: pointer;
-}
-
-.login-register {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -26px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: $blue;
-    opacity: 0;
-    transform-origin: bottom right;
-    transition: all 0.5s linear;
   }
 
 
-  &:hover,
-  &.active {
-    color: $blue;
+  .menu-icon {
+    display: none;
+    margin-right: 8px;
+    cursor: pointer;
+  }
 
-    a {
-      color: $blue;
+  .login-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &.mobile {
+      margin: 20px 16px;
+      display: none;
+      width: fit-content;
+
+      &::after {
+        bottom: -10px;
+      }
+
     }
 
     &::after {
-      opacity: 1;
+      content: '';
+      position: absolute;
+      bottom: -26px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $blue;
+      opacity: 0;
+      transform-origin: bottom right;
+      transition: all 0.5s linear;
+    }
+
+
+    &:hover,
+    &.active {
+      color: $blue;
+
+      a {
+        color: $blue;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    span,
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin-right: 8px;
+      position: relative;
+    }
+
+
+
+    img {
+      width: 13px;
+      height: 12px;
     }
   }
-
-  span,
-  a {
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-    margin-right: 8px;
-    position: relative;
-  }
-
-
-
-  img {
-    width: 13px;
-    height: 12px;
-  }
-}
 
 
 }
@@ -149,7 +160,7 @@
       height: auto;
     }
   }
- }
+}
 
 @media (max-width: 767px) {
   .header {
@@ -169,6 +180,10 @@
         transform: translateX(0%);
       }
 
+      .login-register .mobile {
+        display: block;
+      }
+  
     }
 
     .header-menu {
@@ -186,9 +201,17 @@
       z-index: 10;
       transition: all 0.3s ease-in-out;
 
+      ul {
+        gap: 24px;
+
+        li {
+          width: fit-content;
+        }
+      }
+
       a {
         &::after {
-          bottom: -10px;
+          bottom: -10px !important;
         }
       }
 
@@ -199,6 +222,7 @@
         padding: 20px 0px;
         margin-bottom: 20px;
         position: relative;
+
 
         img {
           cursor: pointer;
@@ -216,6 +240,7 @@
           transition: all 0.5s linear;
         }
       }
+
       ul {
         flex-direction: column;
       }
@@ -228,6 +253,10 @@
 
     .login-register {
       display: none;
+
+      &.mobile {
+        display: block;
+      }
     }
 
   }

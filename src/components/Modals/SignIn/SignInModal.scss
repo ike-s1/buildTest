@@ -5,9 +5,10 @@
     h2 {
         font-size: 32px;
         margin: 0 0 48px 0;
+        color: $main-color;
 
         @media (max-width:992px), (max-height: 750px) {
-            margin: 0 0 16px 0;
+            margin: 16px 0 16px 0;
         }
 
         @media (max-width:480px) {
@@ -68,19 +69,6 @@
         }
     }
 
-    .google-signIn {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 32px;
-        margin-bottom: 24px;
-        border-bottom: 1px solid #B4B4B4;
-
-        @media (max-width:992px),  (max-height: 750px) {
-            padding-bottom: 16px;
-            margin-bottom: 8px;
-        }
-    }
 
     .singIn-links {
 

@@ -37,8 +37,8 @@
         background: linear-gradient(344deg, #E7E7E7 10.13%, #DCDFFF 87.89%);
         
         @media (max-width:992px) {
-            padding: 16px;
-            width: 60% !important;
+            padding: 30px;
+            width: 50% !important;
             max-height: 600px!important;
         }
 
@@ -51,6 +51,7 @@
         }
 
         @media (max-width:480px) {
+            padding: 16px;
             width: 95% !important;
         }
 
@@ -60,3 +61,18 @@
         }
     }
 }
+
+.google-btn.signIn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #B4B4B4;
+
+    @media (max-width:992px),  (max-height: 750px) {
+        padding-bottom: 16px;
+        margin-bottom: 8px;
+    }
+}
+

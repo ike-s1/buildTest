@@ -19,7 +19,7 @@ export const SignInModal = ({ visible, handleClose }) => {
     >
       <div className="signIn-modal">
         <h2 className="signIn-modal-title"> Log in</h2>
-        <div className="google-signIn">
+        <div className="google-btn signIn">
           <GoogleLogin
             onSuccess={null}
             onFailure={null}

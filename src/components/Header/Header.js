@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../resources/logo.png";
 import "./Header.scss";
 import arrowRight from "../../resources/arrow.png";
 import { useDispatch } from "react-redux";
-import { togleSignInModal, togleSignUpModal } from "../../redux/slices/modal/slice";
+import { togleContactUsModal, togleSignInModal, togleSignUpModal } from "../../redux/slices/modal/slice";
 import { Link } from "react-router-dom";
 import menuIcon from "../../resources/icons/burger-menu.png";
 import closeIcon from "../../resources/icons/🦆 icon _cancel_.png";
@@ -16,9 +16,15 @@ const menuItems = [
   { label: "My Chatbot", path: "/my-chatbots" },
 ];
 
+const internalMenuItems = [
+  { label: "My Chatbot", path: "/my-chatbots" },
+];
+
 export const Header = () => {
   const dispatch = useDispatch();
   const [menuOpened, openMenu] = useState(false);
+  const location = useLocation();
+
 
   const toggleMenu = (opened) => {
     openMenu(opened);
@@ -56,7 +62,7 @@ export const Header = () => {
             <div className="mobile-menu-top">
               <div>
                 <Link to="/"  onClick={handleLinkCLick}>
-                  <img src={logo} alt="logo" />
+                  <img src={logo} alt="logo"  />
                 </Link>
               </div>
               <img
@@ -66,7 +72,7 @@ export const Header = () => {
               />
             </div>
           <ul>
-            {menuItems.map((item, index) => (
+            { (location.pathname === '/' ? menuItems : internalMenuItems).map((item, index) => (
               <li key={index}  onClick={handleLinkCLick}>
                 {item.path.startsWith("/#") ? (
                   <a href={item.path}> {item.label}</a>
@@ -75,7 +81,15 @@ export const Header = () => {
                 )}
               </li>
             ))}
-          </ul>
+          </ul>          
+          <div className="login-register mobile">
+              {true ?  (
+                <span  onClick={handleLogin}>Log in</span>
+              ) : (
+                <Link  onClick={handleLinkCLick} to="/account">Account</Link>
+              )}
+              <img src={arrowRight} alt="arrow" />
+            </div>
         </div>
       <img
         className="menu-icon"
