@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ContactUsModal.scss";
 import Rodal from "rodal";
-import closeIcon from "../../../resources/icons/🦆 icon _cancel_.png";
+import closeIcon from "../../../resources/icons/icon-cancel.svg";
 import { CustomInput } from "../../Shared/CustomInput/CustomInput";
 import CustomButton from "../../Shared/CustomBtn/CustomBtn";
 

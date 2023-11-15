@@ -1,6 +1,6 @@
 import React from "react";
 import "./QnaItem.scss";
-import deleteIcon from "../../../../resources/chatbot/delete-icon.png";
+import deleteIcon from "../../../../resources/icons/delete-icon.svg";
 
 export const QnaItem = ({ qna, onDeleteIconClick }) => {
   return (

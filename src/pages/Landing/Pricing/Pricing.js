@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./Pricing.scss";
 import CustomButton from "../../../components/Shared/CustomBtn/CustomBtn";
-import check from "../../../resources/icons/check.png";
-import checkBlack from "../../../resources/icons/check-black.png";
+import check from "../../../resources/icons/check.svg";
 
 const MONTHLY = "MONTHLY";
 const YEARLY = "YEARLY";
@@ -73,7 +72,7 @@ export const Pricing = () => {
               <div className="features-block">
                 {freePlanFeatures.map( (f, index) => {
                   return  <div  key={index} className="feature-item">
-                  <img src={checkBlack} alt="check" />
+                  <img src={check} alt="check" />
                   <p>{f}</p>
                 </div>
                 })}               
@@ -122,7 +121,7 @@ export const Pricing = () => {
               <div className="features-block">
               {enterprisePlanFeatures.map( (f, index) => {
                   return  <div key={index} className="feature-item">
-                  <img src={checkBlack} alt="check" />
+                  <img src={check} alt="check" />
                   <p>{f}</p>
                 </div>
                 })}  

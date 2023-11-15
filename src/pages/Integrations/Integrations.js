@@ -7,7 +7,7 @@ import shopifyLogo from "../../resources/integrations/shopify logo.png";
 import telegramLogo from "../../resources/integrations/telegram logo.png";
 import zapierLogo from "../../resources/integrations/zapier logo.png";
 import slackLogo from "../../resources/integrations/slack logo.png";
-import arrowRight from "../../resources/arrow.png";
+import arrowRight from "../../resources/arrow.svg";
 
 
 export const Integrations = () => {

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../resources/logo.png";
+import logo from "../../resources/logo.svg";
 import "./Header.scss";
-import arrowRight from "../../resources/arrow.png";
+import arrowRight from "../../resources/arrow.svg";
 import { useDispatch } from "react-redux";
 import { togleContactUsModal, togleSignInModal, togleSignUpModal } from "../../redux/slices/modal/slice";
 import { Link } from "react-router-dom";
-import menuIcon from "../../resources/icons/burger-menu.png";
-import closeIcon from "../../resources/icons/🦆 icon _cancel_.png";
+import menuIcon from "../../resources/icons/burger-menu.svg";
+import closeIcon from "../../resources/icons/icon-cancel.svg";
 
 const menuItems = [
   { label: "Demo", path: "/#demo" },

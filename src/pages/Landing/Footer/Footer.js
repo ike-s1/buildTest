@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import discord from "../../../resources/icons/socials/discord.png";
 import facebook from "../../../resources/icons/socials/facebook.png";
 import x from "../../../resources/icons/socials/x.png";
-import logo from "../../../resources/logo.png";
+import logo from "../../../resources/logo.svg";
 
 export const Footer = () => {
   return (

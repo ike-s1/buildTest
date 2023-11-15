@@ -2,7 +2,7 @@ import React  from "react";
 import "./SignInModal.scss";
 import CustomButton from "../../Shared/CustomBtn/CustomBtn";
 import Rodal from "rodal";
-import closeIcon from "../../../resources/icons/🦆 icon _cancel_.png";
+import closeIcon from "../../../resources/icons/icon-cancel.svg";
 import { CustomInput } from "../../Shared/CustomInput/CustomInput";
 import { GoogleLogin } from "@react-oauth/google";
 

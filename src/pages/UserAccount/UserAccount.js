@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomButton from '../../components/Shared/CustomBtn/CustomBtn';
 import './UserAccount.scss';
-import checkIcon from '../../resources/icons/check-black.png';
+import checkIcon from '../../resources/icons/check.svg';
 
 export const  UserAccount = ( ) =>  {
     const plan = 'Free';

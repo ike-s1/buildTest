@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ChatbotItem.scss";
-import refreshIcon from "../../resources/icons/refresh icon.png";
+import refreshIcon from "../../resources/icons/refresh-icon.svg";
 import sendIcon from "../../resources/icons/send icon.png";
 import { useDispatch, useSelector } from "react-redux";
 import { selectChatbot } from "../../redux/slices/chatbot/selectors";
@@ -8,7 +8,8 @@ import { Api } from "../../api";
 import { setSettings } from "../../redux/slices/chatbot/slice";
 import { ChatbotAnswear } from "./ChatbotAnswear/ChatbotAnswear";
 import { ChatbotMessage } from "./ChatbotMessage/ChatbotMessage";
-import closeIcon from "../../resources/icons/🦆 icon _cancel_.png";
+import closeIcon from "../../resources/icons/icon-cancel.svg";
+import logo from "../../resources/logo.svg";
 
 export const ChatbotItem = () => {
   const [message, setMessage] = useState("");
@@ -118,7 +119,7 @@ export const ChatbotItem = () => {
   return (
     <div className="chatbot-item-wrapper">
       <div className="chatbot-header">
-        <h3>User logo</h3>
+        <h3><img src={logo} alt="chat-logo" className="chat-logo"/></h3>
         <div className="header-icons">
           <img
             src={refreshIcon}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Demo.scss";
-import blueWave from "../../../resources/decour/blue-wave.png";
-import blueWaveMobile from "../../../resources/decour/blue-wave-mobile.png";
+import blueWave from "../../../resources/decour/blue-wave.svg";
+import blueWaveMobile from "../../../resources/decour/blue-wave-mobile.svg";
 
 export const Demo = () => {
 

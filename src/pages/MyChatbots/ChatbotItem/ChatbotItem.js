@@ -1,7 +1,7 @@
 import React from "react";
 import "./ChatbotItem.scss";
 import { useNavigate } from "react-router-dom";
-import wave from '../../../resources/decour/wave.png';
+import wave from '../../../resources/decour/wave.svg';
 
 export const ChatbotItem = ({ name }) => {
 

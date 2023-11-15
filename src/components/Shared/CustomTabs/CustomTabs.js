@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./CustomTabs.scss";
 import { Link, useLocation } from "react-router-dom";
-import menuIcon from "../../../resources/icons/burger-menu.png";
+import menuIcon from "../../../resources/icons/burger-menu.svg";
 
 const CustomTabs = ({ items }) => {
   const location = useLocation();

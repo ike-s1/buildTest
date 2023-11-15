@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Embed.scss";
 import Rodal from "rodal";
-import copyIcon from "../../../resources/icons/🦆 icon _copy_.png";
+import copyIcon from "../../../resources/icons/icon-copy.svg";
 import copy from "copy-to-clipboard";
 import { toast } from 'react-toastify';
 

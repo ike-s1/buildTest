@@ -3,8 +3,8 @@ import { useDispatch } from "react-redux";
 import { deleteAllWebsites, setWebsites } from "../../../redux/slices/chatbot/slice";
 import { CustomInput } from "../CustomInput/CustomInput";
 import "./UploadedList.scss";
-import deleteIcon from "../../../resources/chatbot/delete-icon.png";
-import CustomButton from "../CustomBtn/CustomBtn";;
+import deleteIcon from "../../../resources/icons/delete-icon.svg";
+import CustomButton from "../CustomBtn/CustomBtn";
 
 
 export const UploadedList = ({

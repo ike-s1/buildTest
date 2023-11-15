@@ -4,7 +4,7 @@ import telegram from "../../../resources/landing/telegram-logo.png";
 import discord from "../../../resources/landing/discord-logo.png";
 import wp from "../../../resources/landing/wp-logo.png";
 import shopify from "../../../resources/landing/shopify-logo.png";
-import arrowRigth from "../../../resources/arrow.png";
+import arrowRigth from "../../../resources/icons/arrow-rightB.svg";
 
 export const Integrates = () => {
   const integrationItems = [

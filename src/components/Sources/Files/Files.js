@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteFile, setFiles } from "../../../redux/slices/chatbot/slice";
 import { UploadedList } from "../../Shared/UploadedList/UploadedList";
 import { selectChatbot } from "../../../redux/slices/chatbot/selectors";
-import uploadIcon from "../../../resources/icons/upload.png";
+import uploadIcon from "../../../resources/icons/upload-icon.svg";
 
 const fileTypes = ["PDF", "DOC", "CSV", "CODE", "MDX", "LOCAL", "TXT"];
 

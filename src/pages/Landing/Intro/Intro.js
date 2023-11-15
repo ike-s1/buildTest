@@ -1,10 +1,10 @@
 import React from "react";
 import "./Intro.scss";
 import CustomButton from "../../../components/Shared/CustomBtn/CustomBtn";
-import arrowRightW from "../../../resources/icons/arrowRightW.png";
-import arrowRightB from "../../../resources/icons/arrowRightB.png";
-import wave from "../../../resources/decour/wave.png";
-import doubleCircle from "../../../resources/landing/double-circle.png";
+import arrowRightW from "../../../resources/icons/arrow-rightW.svg";
+import arrowRightB from "../../../resources/icons/arrow-rightB.svg";
+import wave from "../../../resources/decour/wave.svg";
+import doubleCircle from "../../../resources/landing/double-circle.svg";
 
 export const Intro = () => {
   return (
