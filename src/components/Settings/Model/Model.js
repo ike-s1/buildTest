@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Model.scss";
 import CustomButton from "../../Shared/CustomBtn/CustomBtn";
-import Slider from '@mui/material/Slider';
 import { CustomInput } from "../../Shared/CustomInput/CustomInput";
 import { CustomSelect } from "../../Shared/CustomSelect/CustomSelect";
 
@@ -52,16 +51,6 @@ export const Model = () => {
               <span>0</span>
               <span>1</span>
             </div>
-            <Slider
-              aria-label="Temperature"
-              step={0.1}
-              max={1}
-              min={0}
-              value={temperature} 
-              onChange={(e) => setTemperature(e.target.value)}
-              valueLabelDisplay="auto"
-              color="secondary"
-            />
             <div className="temperature-info">
               <span>Reserve</span>
               <span>Creative</span>
