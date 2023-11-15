@@ -1,3 +1,4 @@
+import "core-js/actual/object/has-own";
 import "./App.scss";
 import { ChatbotItem as ChatbotFrame } from "./pages/ChatbotItem/ChatbotItem";
 import {
