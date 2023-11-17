@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import "./Embed.scss";
-import Rodal from "rodal";
 import copyIcon from "../../../resources/icons/icon-copy.svg";
 import { toast } from 'react-toastify';
 
@@ -18,15 +17,7 @@ export const EmbedModal = ({ visible, handleClose }) => {
   }
 
   return (
-    <Rodal
-      visible={visible}
-      onClose={handleClose}
-      showCloseButton={false}
-      className="embed-modal-box"
-      animation="fade"
-      duration={500}
-      closeOnEsc={true}
-    >
+
       <div className="embed-modal">
         <div className="embed-content">
           <h3 className="domain-name">
@@ -80,6 +71,5 @@ defer>
           </div>
         </div>
       </div>
-    </Rodal>
   );
 };
