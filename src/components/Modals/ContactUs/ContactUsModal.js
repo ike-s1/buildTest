@@ -11,7 +11,7 @@ export const ContactUsModal = ({ visible, handleClose }) => {
 
   return (
     <div className="contact-us-wrapper">
-       <Rodal
+    <Rodal
       visible={visible}
       onClose={handleClose}
       showCloseButton={false}
@@ -48,7 +48,7 @@ export const ContactUsModal = ({ visible, handleClose }) => {
         <CustomButton> Submit </CustomButton>
         <img src={closeIcon} onClick={handleClose} className="close-icon" alt="closeIcon" />
       </div>
-      </Rodal>
+    </Rodal>
     </div>
   );
 };
