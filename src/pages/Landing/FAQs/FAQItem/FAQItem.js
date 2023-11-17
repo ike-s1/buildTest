@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './FAQItem.scss';
-import arrowDown from "../../../../resources/icons/arrow-donw.png";
+import arrowDown from "../../../../resources/icons/arrow-down.svg";
 
 export const FAQItem = ({ question, answear }) => {
   const [isOpen, setIsOpen] = useState(false);

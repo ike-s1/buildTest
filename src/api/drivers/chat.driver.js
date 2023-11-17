@@ -26,9 +26,12 @@ export const chat = {
       question,
     });
   },
-  chat: ({ question }) => {
+  chat: ({ question, key }) => {
     return axios.post(to("chat"), {
       question,
-    });
+      headers: {
+      'X-Api-Key': `${key}`
+      }
+    })
   },
 };

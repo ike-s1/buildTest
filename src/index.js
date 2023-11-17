@@ -5,7 +5,6 @@ import { store } from "./redux/store";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import 'core-js/features/object/has-own';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +13,4 @@ root.render(
      <Provider store={store}>
           <App />
      </Provider>
-);
-
-reportWebVitals();
+);   

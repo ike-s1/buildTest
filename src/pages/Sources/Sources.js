@@ -32,23 +32,23 @@ export const Sources = () => {
         items={[
           {
             label: "Files",
-            link: "/chatbot/sources?data-source=files"
+            link: "/chatbot/id/sources?data-source=files"
           },
           {
             label: "Text",
-            link: "/chatbot/sources?data-source=text"
+            link: "/chatbot/id/sources?data-source=text"
           },
           {
             label: "Website",
-            link: "/chatbot/sources?data-source=website"
+            link: "/chatbot/id/sources?data-source=website"
           },
           {
             label: "QnA",
-            link: "/chatbot/sources?data-source=qna"
+            link: "/chatbot/id/sources?data-source=qna"
           },
           {
             label: "Notion",
-            link: "/chatbot/sources?data-source=notion"
+            link: "/chatbot/id/sources?data-source=notion"
           }
         ]}
       />

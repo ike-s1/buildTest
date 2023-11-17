@@ -7,7 +7,7 @@ export const ChatbotItem = ({ name }) => {
 
     const navigate = useNavigate();
     const handleChatbotClick = () => {
-        navigate('/chatbot/sources')
+        navigate('/chatbot/id/sources')
     }
 
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import "./Intro.scss";
 import CustomButton from "../../../components/Shared/CustomBtn/CustomBtn";
 import arrowRightW from "../../../resources/icons/arrow-rightW.svg";
-import arrowRightB from "../../../resources/icons/arrow-rightB.svg";
+import arrowRightB from "../../../resources/icons/right-arrow-long.png";
 import wave from "../../../resources/decour/wave.svg";
 import doubleCircle from "../../../resources/landing/double-circle.svg";
 
@@ -44,7 +44,7 @@ export const Intro = () => {
               <div className="circle-item six"></div>
               <div className="circle-line"></div>
             </div>
-            <img className="arrow-right" src={arrowRightB} alt="arrowRigth" />
+            <img className="right-arrow" src={arrowRightB} alt="arrowRigth" />
             <p className="try-demo-text">
               Here’s a demo chatbot trained on our website and product data, so
               you can visit it look at it and ask questions

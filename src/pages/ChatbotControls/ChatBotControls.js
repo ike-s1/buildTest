@@ -21,11 +21,11 @@ import { togleEmbedModal } from "../../redux/slices/modal/slice";
 
 
 const chatbotMenu = [
-  { url: "/chatbot/chatbot", label: "Chatbot" },
-  { url: "/chatbot/settings/general", label: "Settings" },
-  { url: "/chatbot/dashboard/history", label: "Dashboard" },
-  { url: "/chatbot/sources", label: "Sources" },
-  { url: "/chatbot/integrations", label: "Integrations" },
+  { url: "/chatbot/id", label: "Chatbot" },
+  { url: "/chatbot/id/settings/general", label: "Settings" },
+  { url: "/chatbot/id/dashboard/history", label: "Dashboard" },
+  { url: "/chatbot/id/sources", label: "Sources" },
+  { url: "/chatbot/id/integrations", label: "Integrations" },
 ];
 
 export const ChatBotControls = () => {
@@ -54,17 +54,17 @@ export const ChatBotControls = () => {
         </div>
       </div>
       <Routes>
-        <Route path="/chatbot" element={<ChatbotItem />} />
-        <Route path="/settings/" element={<Settings />}>
+        <Route path="/id" element={<ChatbotItem />} />
+        <Route path="id/settings/" element={<Settings />}>
           <Route path="general" element={<General />} />
           <Route path="model" element={<Model />} />
           <Route path="chat-interface" element={<ChatInterface />} />
           <Route path="security" element={<Security />} />
           <Route path="lead-capture" element={<LeadCapture />} />
         </Route>
-        <Route path="/dashboard/*" element={<Dashboard />} />
-        <Route path="/sources" element={<Sources />} />
-        <Route path="/integrations" element={<Integrations />} />
+        <Route path="id/dashboard/*" element={<Dashboard />} />
+        <Route path="id/sources" element={<Sources />} />
+        <Route path="id/integrations" element={<Integrations />} />
       </Routes>
     </div>
   );

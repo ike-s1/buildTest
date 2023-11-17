@@ -45,7 +45,6 @@ export const chatbotSlice = createSlice({
       state.qna = [...state.qna, action.payload];
     },
     deleteQnA(state, action) {
-      debugger;
       state.qna = state.qna.filter((q) => q.id !== action.payload);
     },
     deleteAllQnA(state, action) {

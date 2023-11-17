@@ -40,6 +40,19 @@
         row-gap: 8px;
     }
 
+    .right-arrow {
+        transition: all 0.4s linear;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+
+        
+    @media (max-width: 1280px) {
+        height: 40px;
+        width: auto;
+        }
+    }
+
 
     .intro-left-part {
         width: 50%;
@@ -324,7 +337,7 @@
             &:hover {
                 transform: translate(5px, -5px);
 
-                .arrow-right {
+                .right-arrow {
                     transform: rotate(45deg);
                 }
 
@@ -493,14 +506,6 @@
                     }
                 }
 
-                .arrow-right {
-                    transition: all 0.4s linear;
-                    height: 40px;
-                    width: 40px;
-                    position: absolute;
-                    right: 8px;
-                    top: 8px;
-                }
 
                 .try-demo-text {
                     text-align: left;
@@ -594,12 +599,6 @@
 
 
                     .right-arrow {
-                        transition: all 0.4s linear;
-                        height: 40px;
-                        width: 40px;
-                        position: absolute;
-                        right: 8px;
-                        top: 8px;
 
                         @media (max-width: 768px) {
                             display: none;
@@ -702,12 +701,6 @@
                     }
 
                     .right-arrow {
-                        transition: all 0.4s linear;
-                        height: 40px;
-                        width: 40px;
-                        position: absolute;
-                        right: 8px;
-                        top: 8px;
 
                         @media (max-width: 768px) {
                             display: none;

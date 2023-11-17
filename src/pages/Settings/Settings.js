@@ -7,23 +7,23 @@ import './Setting.scss';
 const settingLinks = [
   {
     label: "General",
-    link: "/chatbot/settings/general",
+    link: "/chatbot/id/settings/general",
   },
   {
     label: "Model",
-    link: "/chatbot/settings/model",
+    link: "/chatbot/id/settings/model",
   },
   {
     label: "Chat interface",
-    link: "/chatbot/settings/chat-interface",
+    link: "/chatbot/id/settings/chat-interface",
   },
   {
     label: "Security",
-    link: "/chatbot/settings/security",
+    link: "/chatbot/id/settings/security",
   },
   {
     label: "Lead capture",
-    link: "/chatbot/settings/lead-capture",
+    link: "/chatbot/id/settings/lead-capture",
   },
 ]
 

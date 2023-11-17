@@ -3,42 +3,22 @@
 .custom-tabs {
   width: 226px;
 
-  .mobile-menu-icon {
-    display: none;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 0.8;
-    color: $blue;
+  @media (max-width: 640px) {
+    width: 100% !important;
+    padding-bottom: 20px;
 
-    @media (max-width: 640px) {
-      display: block;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 8px;
+      justify-content: flex-start;
     }
   }
 
-  @media (max-width: 640px) {
-    align-self: flex-end;
-    width: fit-content !important;
-    padding: 0 20px 20px 20px;
-
+  @media (max-width: 480px) {
     ul {
-      position: absolute;
-      display: none;
-      top: 30px;
-      right: -5px;
-      width: 200px;
-      z-index: 10;
-      border: 1px solid rgba(0, 0, 0, 0.25);
-      border-radius: 7px;
-      padding: 10px 0;
-      background: white;
+      justify-content: center;
 
-    }
-
-    &.open {
-      ul {
-        display: block;
-      }
     }
   }
 
@@ -71,8 +51,6 @@
         transform: translateY(-50%);
         border-radius: 50%;
         background: #113DD8;
-        ;
-
       }
 
       &::marker {
@@ -87,13 +65,24 @@
 
       &.active {
         background: #ECEFF3;
-        color: #113DD8;
         padding-left: 24px;
+
+        a {
+          color: #113DD8;
+          font-weight: 600;
+        }
+
+        @media (max-width: 640px) {
+          padding-left: 8px;
+        }
 
         &:before {
           content: " ";
           display: unset;
 
+          @media (max-width: 640px) {
+            display: none;
+          }
         }
       }
     }

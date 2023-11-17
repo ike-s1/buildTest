@@ -81,6 +81,7 @@
 
                     img {
                         margin-right: 8px;
+                        filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(193deg) brightness(104%) contrast(105%);
                     }
                 }
             }

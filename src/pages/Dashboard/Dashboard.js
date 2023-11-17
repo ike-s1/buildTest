@@ -67,11 +67,11 @@ export const Dashboard = () => {
           items={[
             {
               label: "History",
-              link: "/chatbot/dashboard/history",
+              link: "/chatbot/id/dashboard/history",
             },
             {
               label: "Leads",
-              link: "/chatbot/dashboard/leads",
+              link: "/chatbot/id/dashboard/leads",
             },
           ]}
         />

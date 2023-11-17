@@ -1,18 +1,16 @@
-<svg width="610" height="46" viewBox="0 0 610 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.75">
-<path d="M1 19.3152L25.0647 10.6576L49.2753 2L73.4129 10.6576L97.5506 19.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M97.5506 19.3152L121.688 10.6576L145.826 2L169.964 10.6576L194.101 19.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M194.101 19.3152L218.239 10.6576L242.377 2L266.587 10.6576L290.725 19.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M290.725 19.3152L314.862 10.6576L339 2L363.138 10.6576L387.275 19.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M387.275 19.3152L411.413 10.6576L435.551 2L459.688 10.6576L483.826 19.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M483.826 19.3152L507.964 10.6576L532.174 2L556.312 10.6576L580.449 19.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M580.449 19.3152L604.587 10.6576L628.725 2L652.862 10.6576L677 19.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M1 46.0001L25.0647 37.3424L49.2753 28.6848L73.4129 37.3424L97.5506 46.0001" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M97.5506 46.0001L121.688 37.3424L145.826 28.6848L169.964 37.3424L194.101 46.0001" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M194.101 46.0001L218.239 37.3424L242.377 28.6848L266.587 37.3424L290.725 46.0001" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M290.725 46.0001L314.862 37.3424L339 28.6848L363.138 37.3424L387.275 46.0001" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M387.275 46.0001L411.413 37.3424L435.551 28.6848L459.688 37.3424L483.826 46.0001" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M483.826 46.0001L507.964 37.3424L532.174 28.6848L556.312 37.3424L580.449 46.0001" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M580.449 46.0001L604.587 37.3424L628.725 28.6848L652.862 37.3424L677 46.0001" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
-</g>
+<svg width="348" height="24" viewBox="0 0 348 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 10.6576L13.3172 6.32881L25.7089 2L38.0634 6.32881L50.4179 10.6576" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M50.4179 10.6576L62.7724 6.32881L75.1269 2L87.4813 6.32881L99.8358 10.6576" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M99.8358 10.6576L112.19 6.32881L124.545 2L136.937 6.32881L149.291 10.6576" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M149.291 10.6576L161.645 6.32881L174 2L186.354 6.32881L198.709 10.6576" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M198.709 10.6576L211.063 6.32881L223.418 2L235.772 6.32881L248.127 10.6576" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M248.127 10.6576L260.481 6.32881L272.873 2L285.228 6.32881L297.582 10.6576" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M297.582 10.6576L309.937 6.32881L322.291 2L334.645 6.32881L347 10.6576" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M1 21.3152L13.3172 16.9864L25.7089 12.6576L38.0634 16.9864L50.4179 21.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M50.4179 21.3152L62.7724 16.9864L75.1269 12.6576L87.4813 16.9864L99.8358 21.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M99.8358 21.3152L112.19 16.9864L124.545 12.6576L136.937 16.9864L149.291 21.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M149.291 21.3152L161.645 16.9864L174 12.6576L186.354 16.9864L198.709 21.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M198.709 21.3152L211.063 16.9864L223.418 12.6576L235.772 16.9864L248.127 21.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M248.127 21.3152L260.481 16.9864L272.873 12.6576L285.228 16.9864L297.582 21.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M297.582 21.3152L309.937 16.9864L322.291 12.6576L334.645 16.9864L347 21.3152" stroke="#6385FF" stroke-width="2" stroke-miterlimit="10"/>
 </svg>

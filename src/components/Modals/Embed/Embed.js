@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import "./Embed.scss";
+import Rodal from "rodal";
 import copyIcon from "../../../resources/icons/icon-copy.svg";
+import copy from "copy-to-clipboard";
 import { toast } from 'react-toastify';
 
 
@@ -13,11 +15,20 @@ export const EmbedModal = ({ visible, handleClose }) => {
 
   function copyToClipboard(element) {
     const text = element.current.textContent;
+    copy(text);
     toast.success("copied to clipboard")
   }
 
   return (
-
+    <Rodal
+      visible={visible}
+      onClose={handleClose}
+      showCloseButton={false}
+      className="embed-modal-box"
+      animation="fade"
+      duration={500}
+      closeOnEsc={true}
+    >
       <div className="embed-modal">
         <div className="embed-content">
           <h3 className="domain-name">
@@ -53,7 +64,8 @@ frameborder="0"
             {`<script>
 window.embeddedChatbotConfig = {
 chatbotId:"${id}",
-domain: "https://quantumchat.ai"
+domain: "https://quantumchat.ai",
+key: "test"
 }
 </script>
 <script
@@ -71,5 +83,6 @@ defer>
           </div>
         </div>
       </div>
+    </Rodal>
   );
 };

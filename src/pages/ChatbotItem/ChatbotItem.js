@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ChatbotItem.scss";
 import refreshIcon from "../../resources/icons/refresh-icon.svg";
-import sendIcon from "../../resources/icons/send icon.png";
+import sendIcon from "../../resources/icons/send-icon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { selectChatbot } from "../../redux/slices/chatbot/selectors";
 import { Api } from "../../api";
@@ -18,6 +18,10 @@ export const ChatbotItem = () => {
   const { settings } = useSelector(selectChatbot);
   const dispatch = useDispatch();
   const [isWidget, setIsWidget] = useState(false);
+  
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const key = urlParams.get('key');
 
   const [dialog, setDialog] = useState([
     {
@@ -90,7 +94,7 @@ export const ChatbotItem = () => {
       setDialog((prev) => [...prev, { type: "question", text: message }]);
       parsedDialog.push({ type: "question", text: message });
       setMessage("");
-      const res = await Api.chat.chat({ question: message });
+      const res = await Api.chat.chat({ question: message, key });
       setDialog((prev) => [...prev, { type: "answear", text: res.data.data }]);
       parsedDialog.push({ type: "answear", text: res.data.data });
       localStorage.setItem("botId", JSON.stringify(parsedDialog));
@@ -143,7 +147,7 @@ export const ChatbotItem = () => {
         <div className="chatbot-chat-container">
           <div className="chatbot-chat-content">
             <div className="chatbot-dialog-block" ref={chatbotDialogRef}>
-              {dialog.map(({ type, text }, index) => {
+              {dialog?.map(({ type, text }, index) => {
                 if (type === "answear") {
                   return <ChatbotAnswear key={index} text={text} />;
                 }

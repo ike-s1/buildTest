@@ -17,10 +17,11 @@
 <script>
   window.embeddedChatbotConfig = {
     chatbotId: "1",
-    domain: "https://build-test-seven.vercel.app"
+    domain: "https://build-test-seven.vercel.app",
+    key: `test`
   }
 </script>
- <script>
+<script>
   if (!window.location.pathname.includes('/chatbot-iframe/')) {
     const script = document.createElement("script");
     script.src = "/embedQuantum.min.js";
@@ -30,4 +31,5 @@
     document.body.appendChild(script);
   }
 </script>
+
 </html>

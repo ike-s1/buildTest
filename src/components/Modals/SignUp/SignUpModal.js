@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./SignUpModal.scss";
 import CustomButton from "../../Shared/CustomBtn/CustomBtn";
+import Rodal from "rodal";
 import closeIcon from "../../../resources/icons/icon-cancel.svg";
 import { CustomInput } from "../../Shared/CustomInput/CustomInput";
 import { GoogleLogin } from "@react-oauth/google";
@@ -8,6 +9,15 @@ import { GoogleLogin } from "@react-oauth/google";
 export const SignUpModal  = ({ visible, handleClose }) => {
 
   return (
+    <Rodal
+      visible={visible}
+      onClose={handleClose}
+      showCloseButton={false}
+      className="signUp-modal-box"
+      animation="fade"
+      duration={500}
+      closeOnEsc={true}
+    >
       <div className="signUp-modal">
         <h2 className="signUp-modal-title"> Log in</h2>
         <div className="google-btn signIn">
@@ -35,5 +45,6 @@ export const SignUpModal  = ({ visible, handleClose }) => {
           alt="closeIcon"
         />
       </div>
+    </Rodal>
   );
 };
