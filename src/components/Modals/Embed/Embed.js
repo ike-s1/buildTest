@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import "./Embed.scss";
 import Rodal from "rodal";
 import copyIcon from "../../../resources/icons/icon-copy.svg";
-import copy from "copy-to-clipboard";
 import { toast } from 'react-toastify';
 
 
@@ -15,7 +14,6 @@ export const EmbedModal = ({ visible, handleClose }) => {
 
   function copyToClipboard(element) {
     const text = element.current.textContent;
-    copy(text);
     toast.success("copied to clipboard")
   }
 
