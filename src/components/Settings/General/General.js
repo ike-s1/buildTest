@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CustomButton from "../../Shared/CustomBtn/CustomBtn";
 import "./General.scss";
+import copy from "copy-to-clipboard";
 import copyIcon from '../../../resources/icons/icon-copy.svg';
 import { CustomInput } from "../../Shared/CustomInput/CustomInput";
 import { toast } from "react-toastify";
@@ -14,6 +15,7 @@ export const General = () => {
   };
 
   const handleCopyId = () => {
+    copy(chatbotId);
     toast.success('copied to clipboard');
   }
 
