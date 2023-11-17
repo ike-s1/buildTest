@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactUsModal.scss";
+import Rodal from "rodal";
 import closeIcon from "../../../resources/icons/icon-cancel.svg";
 import { CustomInput } from "../../Shared/CustomInput/CustomInput";
 import CustomButton from "../../Shared/CustomBtn/CustomBtn";
@@ -10,6 +11,15 @@ export const ContactUsModal = ({ visible, handleClose }) => {
 
   return (
     <div className="contact-us-wrapper">
+       <Rodal
+      visible={visible}
+      onClose={handleClose}
+      showCloseButton={false}
+      className="contact-us-modal-box"
+      animation="fade"
+      duration={500}
+      closeOnEsc={true}
+    >
       <div className="contact-us-modal">
         <h2 className="contact-us-title"> Contact us</h2>
         <h4 className="contact-us-subtitle">
@@ -38,6 +48,7 @@ export const ContactUsModal = ({ visible, handleClose }) => {
         <CustomButton> Submit </CustomButton>
         <img src={closeIcon} onClick={handleClose} className="close-icon" alt="closeIcon" />
       </div>
+      </Rodal>
     </div>
   );
 };
