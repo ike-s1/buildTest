@@ -4,6 +4,7 @@ import CustomButton from "../../../Shared/CustomBtn/CustomBtn";
 import { useDispatch } from "react-redux";
 import { setQnA } from "../../../../redux/slices/chatbot/slice";
 import { CustomInput } from "../../../Shared/CustomInput/CustomInput";
+import { v4 as uuidv4 } from 'uuid';
 
 
 export const QnaInput = () => {
@@ -17,7 +18,7 @@ export const QnaInput = () => {
         alert('Answer length too short in Q&A section')
         return
       }
-        const data = {question, answer, id: '1'};
+        const data = {question, answer, id: uuidv4()};
         dispatch(setQnA(data));
         setQuestion("");
         setAnswer("");
