@@ -169,12 +169,8 @@ export const ChatbotItem = () => {
                 className="chat-input"
                 onKeyPress={handleKeyPress}
               ></input>
-              <button disabled={loadingAnswear}>
-                <img
-                  onClick={handleSendMessage}
-                  src={sendIcon}
-                  alt="sendIcon"
-                />
+              <button disabled={loadingAnswear} onClick={loadingAnswear ? null : handleSendMessage}>
+              <img src={sendIcon} alt="sendIcon" />
               </button>
             </div>
           </div>
